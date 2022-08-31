@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/node": "^18.7.14",
+    "node-watch": "^0.7.3",
     "slugify": "^1.6.5"
   },
   "devDependencies": {
