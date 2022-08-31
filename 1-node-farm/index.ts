@@ -76,7 +76,7 @@ const server = http.createServer((req:any, res:any) => {
     res.end(output);
 
     // API
-  } else if (pathname === '/api') {
+  } else if (pathname === "/api") {
     res.writeHead(200, {
       'Content-type': 'application/json'
     });
