@@ -7,6 +7,7 @@ const replaceTemplate = require('./modules/replaceTemplate.ts');
 /////////////////////////////////
 // FILES
 
+
 // Blocking, synchronous way
 // const textIn = fs.readFileSync('./txt/input.txt', 'utf-8');
 // console.log(textIn);
@@ -49,7 +50,7 @@ const tempProduct = fs.readFileSync(
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const dataObj = JSON.parse(data);
  
-const slugs = dataObj.map(el => slugify(el.productName, { lower: true }));
+const slugs = dataObj.map((el: { productName: any; }) => slugify(el.productName, { lower: true }));
 console.log(slugs);
 
 const server = http.createServer((req, res) => {
@@ -61,7 +62,7 @@ const server = http.createServer((req, res) => {
       'Content-type': 'text/html'
     });
 
-    const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el)).join('');
+    const cardsHtml = dataObj.map((el: any) => replaceTemplate(tempCard, el)).join('');
     const output = tempOverview.replace('{%PRODUCT_CARDS%}', cardsHtml);
     res.end(output);
 
