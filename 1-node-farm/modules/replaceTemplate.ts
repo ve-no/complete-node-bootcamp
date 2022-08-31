@@ -1,4 +1,4 @@
-module.exports = (temp, product) => {
+module.exports = (temp: string, product: { productName: any; image: any; price: any; from: any; nutrients: any; quantity: any; description: any; id: any; organic: any; }) => {
   let output = temp.replace(/{%PRODUCTNAME%}/g, product.productName);
   output = output.replace(/{%IMAGE%}/g, product.image);
   output = output.replace(/{%PRICE%}/g, product.price);
