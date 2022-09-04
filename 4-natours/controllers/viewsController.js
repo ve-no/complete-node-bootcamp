@@ -12,7 +12,6 @@ exports.alerts = (req, res, next) => {
   next();
 };
 
-
 exports.getOverview = catchAsync(async (req, res, next) => {
   // 1) Get tour data from collection
   const tours = await Tour.find();
