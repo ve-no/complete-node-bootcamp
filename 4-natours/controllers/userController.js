@@ -14,6 +14,7 @@ const factory = require('./handlerFactory');
 //     cb(null, `user-${req.user.id}-${Date.now()}.${ext}`);
 //   }
 // });
+
 const multerStorage = multer.memoryStorage();
 
 const multerFilter = (req, file, cb) => {
