@@ -13,7 +13,6 @@ const multerFilter = (req, file, cb) => {
   } else {
     cb(new AppError('Not an image! Please upload only images.', 400), false);
   }
-  
 };
 
 const upload = multer({
