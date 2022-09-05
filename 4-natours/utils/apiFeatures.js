@@ -34,7 +34,7 @@ class APIFeatures {
       const fields = this.queryString.fields.split(',').join(' ');
       this.query = this.query.select(fields);
     } else {
-      this.query = this.query.Select('-__v');
+      this.query = this.query.elect('-__v');
     }
 
     return this;
