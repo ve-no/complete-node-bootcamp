@@ -80,7 +80,6 @@ const sendErrorProd = (err, req, res) => {
     title: 'Something went wrong!',
     msg: 'Please try again later.'
   });
-  
 };
 
 module.exports = (err, req, res, next) => {
