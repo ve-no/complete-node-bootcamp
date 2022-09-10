@@ -63,7 +63,6 @@ const sendErrorProd = (err, req, res) => {
       message: 'Something went very wrong!'
     });
   }
-  
 
   // B) RENDERED WEBSITE
   // A) Operational, trusted error: send message to client
