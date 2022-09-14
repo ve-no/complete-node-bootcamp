@@ -20,7 +20,6 @@ const bookingRouter = require('./routes/bookingRoutes');
 const bookingController = require('./controllers/bookingController');
 const viewRouter = require('./routes/viewRoutes');
 
-
 // Start express app
 const app = express();
 
