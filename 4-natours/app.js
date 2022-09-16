@@ -35,7 +35,6 @@ app.use(cors());
 
 // api.natours.com, front-end natours.com
 // app.use(cors({
-  
 //   origin: 'https://www.natours.com'
 // }))
 
