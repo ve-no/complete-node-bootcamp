@@ -19,7 +19,7 @@ const writeFilePro = (file, data) => {
   });
 };
 
-const getDogPic = async () => {
+  const getDogPic = async () => {
   try {
     const data = await readFilePro(`${__dirname}/dog.txt`);
     console.log(`Breed: ${data}`);
@@ -86,3 +86,4 @@ readFilePro(`${__dirname}/dog.txt`)
     console.log(err);
   });
 */
+
