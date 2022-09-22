@@ -86,4 +86,3 @@ readFilePro(`${__dirname}/dog.txt`)
     console.log(err);
   });
 */
-
